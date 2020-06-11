@@ -1,0 +1,38 @@
+# Settings:
+set accelerated-2d-canvas=true
+set allow-file-access-from-file-urls=false
+set allow-universal-access-from-file-urls=false
+set caret=true
+set cookie-accept=origin
+set dark-mode=true
+set dns-prefetching=true
+set download-path=~/download
+set editor-command=e -wcs scratch %s
+set geolocation=ask
+set header=DNT=1
+set home-page=http://10.11.12.1:8080/bookmarks.html
+set incsearch=true
+set input-autohide=true
+set javascript-can-access-clipboard=false
+set javascript-can-open-windows-automatically=false
+set plugins=false
+set prevent-newwindow=true
+set spell-checking-languages=en_US
+set spell-checking=true
+set tabs-to-links=true
+set webinspector=true
+set xss-auditor=true
+
+# Shortcuts:
+shortcut-add dl=https://duckduckgo.com/lite/?q=$0
+shortcut-add wp=https://en.wikipedia.org/w/index.php?search=$0
+shortcut-add wd=https://en.wiktionary.org/w/index.php?search=$0
+shortcut-add ha=https://hackage.haskell.org/packages/search?terms=$0
+shortcut-add hg=https://hoogle.haskell.org/?hoogle=$0&scope=set%3Astackage
+shortcut-add az=https://smile.amazon.com/s?k=$0&ref=nb_sb_noss
+shortcut-add np=https://nixos.org/nixos/packages.html?query=$0
+shortcut-add no=https://nixos.org/nixos/options.html#$0
+shortcut-default dl
+
+# Switching Tabs:
+nnoremap gt :sh! vimb-switch-tab.sh $VIMB_XID<CR><Esc>
