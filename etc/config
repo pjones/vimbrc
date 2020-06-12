@@ -10,6 +10,9 @@ set download-path=~/download
 set editor-command=e -wcs scratch %s
 set geolocation=ask
 set header=DNT=1
+set hint-follow-last=false
+set hint-keys-same-length=true
+set hint-timeout=0
 set home-page=http://10.11.12.1:8080/bookmarks.html
 set incsearch=true
 set input-autohide=true
@@ -19,19 +22,22 @@ set plugins=false
 set prevent-newwindow=true
 set spell-checking-languages=en_US
 set spell-checking=true
+set stylesheet=true
 set tabs-to-links=true
+set timeoutlen=5000
 set webinspector=true
 set xss-auditor=true
 
 # Shortcuts:
+shortcut-add az=https://smile.amazon.com/s?k=$0&ref=nb_sb_noss
 shortcut-add dl=https://duckduckgo.com/lite/?q=$0
-shortcut-add wp=https://en.wikipedia.org/w/index.php?search=$0
-shortcut-add wd=https://en.wiktionary.org/w/index.php?search=$0
+shortcut-add go=https://www.google.com/search?q=$0
 shortcut-add ha=https://hackage.haskell.org/packages/search?terms=$0
 shortcut-add hg=https://hoogle.haskell.org/?hoogle=$0&scope=set%3Astackage
-shortcut-add az=https://smile.amazon.com/s?k=$0&ref=nb_sb_noss
-shortcut-add np=https://nixos.org/nixos/packages.html?query=$0
 shortcut-add no=https://nixos.org/nixos/options.html#$0
+shortcut-add np=https://nixos.org/nixos/packages.html?query=$0
+shortcut-add wd=https://en.wiktionary.org/w/index.php?search=$0
+shortcut-add wp=https://en.wikipedia.org/w/index.php?search=$0
 shortcut-default dl
 
 # Switching Tabs:
