@@ -28,12 +28,23 @@ set timeoutlen=5000
 set webinspector=true
 set xss-auditor=true
 
+# Styling:
+set completion-css=background-color:#0f1011;color:#ffffff;font:10pt Hermit;
+set completion-hover-css=background-color:#41728e;color:#ffffff;font:10pt Hermit;
+set completion-selected-css=background-color:#41728e;color:#ffffff;font:10pt Hermit;
+set input-css=background-color:#0f1011;color:#ffffff;font:12pt Hermit;
+set input-error-css=background-color:#0f1011;color:#cc6666;font:12pt Hermit;
+set status-css=background-color:#0f1011;color:#cc6666;font:10pt Hermit;
+set status-ssl-css=background-color:#0f1011;color:#b5bd68;10pt Hermit;
+set status-ssl-invalid-css=background-color:#cc6666;color:#0f1011;10pt Hermit;
+set monospace-font=Hermit
+
 # Shortcuts:
 shortcut-add az=https://smile.amazon.com/s?k=$0&ref=nb_sb_noss
 shortcut-add dl=https://duckduckgo.com/lite/?q=$0
 shortcut-add go=https://www.google.com/search?q=$0
 shortcut-add ha=https://hackage.haskell.org/packages/search?terms=$0
-shortcut-add hg=https://hoogle.haskell.org/?hoogle=$0&scope=set%3Astackage
+shortcut-add ho=https://hoogle.haskell.org/?hoogle=$0&scope=set%3Astackage
 shortcut-add no=https://nixos.org/nixos/options.html#$0
 shortcut-add np=https://nixos.org/nixos/packages.html?query=$0
 shortcut-add wd=https://en.wiktionary.org/w/index.php?search=$0
@@ -42,3 +53,7 @@ shortcut-default dl
 
 # Switching Tabs:
 nnoremap gt :sh! vimb-switch-tab.sh $VIMB_XID<CR><Esc>
+
+# History Navigation:
+:nnoremap H <C-o>
+:nnoremap L <C-i>
