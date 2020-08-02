@@ -13,7 +13,7 @@ set header=DNT=1
 set hint-follow-last=false
 set hint-keys-same-length=true
 set hint-timeout=0
-set home-page=http://10.11.12.1:8080/bookmarks.html
+set home-page=http://localhost:8080/bookmarks.html
 set incsearch=true
 set input-autohide=true
 set javascript-can-access-clipboard=false
