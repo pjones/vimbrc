@@ -28,7 +28,7 @@ list_vimb_windows() {
 ################################################################################
 declare -A windows="( $(list_vimb_windows) )"
 
-answer=$(rofi -dmenu -i -p "vimb" -only-match < <(
+answer=$(rofi -dmenu -i -p "vimb" -no-custom < <(
   for title in "${!windows[@]}"; do
     echo "$title"
   done
